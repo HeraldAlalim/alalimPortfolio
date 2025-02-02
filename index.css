@@ -48,14 +48,14 @@ body{
 .text-main{
   color: aliceblue;
   margin-left: 20%;
-  margin-top: 30%;
+  margin-top: 0%;
   font-size:200%;
   font-weight: 50;
 }
 
 .text-name1,.text-name2{
   color: aliceblue;
-  font-size: 400%;
+  font-size: 300%;
   margin-left: 20%;
   font-weight: bold;
   margin-top: 0px;
@@ -69,5 +69,10 @@ body{
   margin-top: 3%;
 }
 .text-button{
-  margin-top: 50%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 50vw; 
+  margin-top: 40%;
+
 }
