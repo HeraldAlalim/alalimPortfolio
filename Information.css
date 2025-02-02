@@ -13,28 +13,28 @@ body{
   background-color: black;
   color: white;
   width: 50vw; 
-  height: 50vw; 
+  height: 120vw; 
 
 }
 .blue1{
   background-color: rgb(2, 0, 32);
   color: white;
   width: 50vw; 
-  height: 110vw;
+  height: 220vw;
 }
 
 .black2{
   background-color: black;
   color: white;
   width: 50vw; 
-  height: 110vw; 
+  height: 220vw;
 
 }
 .blue2{
   background-color: rgb(2, 0, 32);
   color: white;
   width: 50vw; 
-  height: 50vw; 
+  height: 120vw;  
 }
 .Excel{
   width: 60%;
