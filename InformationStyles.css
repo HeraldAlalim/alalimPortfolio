@@ -65,12 +65,7 @@ p {
   margin-bottom: 1rem;
 }
 
-.certificate-container {
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px;
-  cursor: pointer;
-}
+
 
 .excel-cert {
   max-width: 100%;
@@ -79,60 +74,122 @@ p {
   transition: transform 0.3s ease;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.overlay-content {
-  color: var(--text-color);
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-
-.question {
-  margin-bottom: 1.5rem;
-}
 
 .project-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: center;
+  justify-content: space-evenly;
+  gap: 1.5rem;
 }
 
-.project-links a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
+.project {
+  text-align: center;
+  max-width: 200px;
+  margin-right: 50px;
+
+}
+
+.project-preview {
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+}
+
+.project-preview:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project a {
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
   background-color: var(--accent-color);
   color: var(--text-color);
   text-decoration: none;
   border-radius: 5px;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease;
+  width: 250px;
 }
 
-.project-links a:hover {
+.project a:hover {
   background-color: #c0392b;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.video-section {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+}
+
+.portfolio-video {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.skills-container {
+  flex: 1;
+  padding: 1rem;
+}
+
+.skills-container h2 {
+  margin-bottom: 1.5rem;
+}
+
+.skill {
+  margin-bottom: 1.5rem;
+}
+
+.skill-name {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.skill-bar {
+  height: 10px;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  width: var(--level);
+  animation: fillBar 1.5s ease-in-out;
+}
+
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--level);
+  }
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 1rem;
+  .content-wrapper {
+    flex-direction: column;
   }
 
-  section {
-    padding: 1.5rem;
+  .portfolio-video {
+    width: 100%;
+  }
+
+  .skills-container {
+    width: 100%;
   }
 }
-
